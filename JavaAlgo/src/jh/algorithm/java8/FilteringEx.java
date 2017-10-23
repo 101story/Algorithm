@@ -1,4 +1,4 @@
-package com.jin.algo;
+package jh.algorithm.java8;
 
 import java.util.Arrays;
 import java.util.List;

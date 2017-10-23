@@ -1,4 +1,4 @@
-package com.jin.algo;
+package jh.algorithm.java8;
 
 public class Player {
 	private String name;

@@ -1,4 +1,4 @@
-package com.jin.algo;
+package jh.algorithm.java8;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,18 +11,18 @@ public class ComparatoImpl {
 		List<Integer> list = new ArrayList<Integer>();
 
 		for (int i = 0; i < 10; i++)
-			list.add((int) (Math.random() * 100 + 1));// 1ºÎÅÍ 100±îÁöÀÇ Á¤¼öÁß 10°³¸¦ ·£´ıÀ¸·Î ÀÔ·Â
+			list.add((int) (Math.random() * 100 + 1));// 1ë¶€í„° 100ê¹Œì§€ì˜ ì •ìˆ˜ì¤‘ 10ê°œë¥¼ ëœë¤ìœ¼ë¡œ ì…ë ¥
 
-		System.out.println("Á¤·ÄÀü: ");
+		System.out.println("ì •ë ¬ì „: ");
 		for (Object o : list) {
 			Integer i = (Integer) o;
 			System.out.print(i + " ");
 		}
 
 		System.out.println("\r\n");
-		System.out.println("¿À¸§Â÷¼ø Á¤·Ä: ");
+		System.out.println("ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬: ");
 
-		Collections.sort(list); // Collictions.sort ¸Ş¼Òµå¸¦ ÀÌ¿ëÇØ ¿À¸§Â÷¼ø Á¤·Ä
+		Collections.sort(list); // Collictions.sort ë©”ì†Œë“œë¥¼ ì´ìš©í•´ ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
 
 		for (Object o : list) {
 			Integer i = (Integer) o;
@@ -32,7 +32,7 @@ public class ComparatoImpl {
 
 		System.out.println("\r\n");
 
-		System.out.println("³»¸²Â÷¼ø Á¤·Ä: ");
+		System.out.println("ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬: ");
 		for (Object o : list) {
 			Integer i = (Integer) o;
 			System.out.print(i + " ");
@@ -40,17 +40,17 @@ public class ComparatoImpl {
 	}
 }
 
-// Comparator ÀÎÅÍÆäÀÌ½º¸¦ ±¸Çö
+// Comparator ì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„
 class Comp implements Comparator<Integer> {
-	public int compare(Integer o1, Integer o2) { // compara ¸Ş¼Òµå¸¦ ¿À¹ö¶óÀÌµå
-		/*-- ¿ª¼øÁ¤·Ä
+	public int compare(Integer o1, Integer o2) { // compara ë©”ì†Œë“œë¥¼ ì˜¤ë²„ë¼ì´ë“œ
+		/*-- ì—­ìˆœì •ë ¬
 		if(o1>o2) return -1;
 		else if(o1<o2)return 1;
 		else return 0;
 		*/
-		return o1 > o2 ? -1 : (o1 == o2 ? 0 : 1); // À§ÀÇ if ¹®À» Á¶°Ç»ïÇ× ¿¬»êÀÚ·Î ´ëÃ¼
+		return o1 > o2 ? -1 : (o1 == o2 ? 0 : 1); // ìœ„ì˜ if ë¬¸ì„ ì¡°ê±´ì‚¼í•­ ì—°ì‚°ìë¡œ ëŒ€ì²´
 	}
 	/*
-	 * equals¸¦ ±¸ÇöÇÏÁö ¾ÊÀ¸¸é ObjectÀÇ equals¸¦ »ç¿ëÇÕ´Ï´Ù. equals¸¦ ±¸ÇöÇßÀ»¶§ ÆÛÆ÷¸Õ½º°¡ Çâ»óµÈ´Ù´Â ¸»µµ ÀÖ½À´Ï´Ù.
+	 * equalsë¥¼ êµ¬í˜„í•˜ì§€ ì•Šìœ¼ë©´ Objectì˜ equalsë¥¼ ì‚¬ìš©í•©ë‹ˆë‹¤. equalsë¥¼ êµ¬í˜„í–ˆì„ë•Œ í¼í¬ë¨¼ìŠ¤ê°€ í–¥ìƒëœë‹¤ëŠ” ë§ë„ ìˆìŠµë‹ˆë‹¤.
 	 */
 }

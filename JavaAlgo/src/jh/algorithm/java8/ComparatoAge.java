@@ -1,4 +1,4 @@
-package com.jin.algo;
+package jh.algorithm.java8;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,11 +9,11 @@ public class ComparatoAge {
 	public static void main(String[] args) {
 		ArrayList<Player> playlist = new ArrayList<Player>();
 
-		Player ply1 = new Player("°¡³ª", "°ø°İ", 21);
-		Player ply2 = new Player("³ª´Ù", "¹æ¾î", 30);
-		Player ply3 = new Player("¶ó¶ó", "°ø°İ", 21);
-		Player ply4 = new Player("¶ó´©", "¹æ¾î", 24);
-		Player ply5 = new Player("¹Ù¼ö", "°ø°İ", 27);
+		Player ply1 = new Player("ê°€ë‚˜", "ê³µê²©", 21);
+		Player ply2 = new Player("ë‚˜ë‹¤", "ë°©ì–´", 30);
+		Player ply3 = new Player("ë¼ë¼", "ê³µê²©", 21);
+		Player ply4 = new Player("ë¼ëˆ„", "ë°©ì–´", 24);
+		Player ply5 = new Player("ë°”ìˆ˜", "ê³µê²©", 27);
 
 		playlist.add(ply1);
 		playlist.add(ply2);
