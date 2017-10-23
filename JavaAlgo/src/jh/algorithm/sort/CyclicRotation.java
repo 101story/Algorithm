@@ -1,6 +1,6 @@
-package com.jin.algo;
+package jh.algorithm.sort;
 
-import java.util.*;
+import java.util.LinkedList;
 
 public class CyclicRotation {
 

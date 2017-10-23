@@ -1,3 +1,4 @@
+<Codility>
 
 == lesson2 ==
 [CyclicRotation]

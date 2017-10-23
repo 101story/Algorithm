@@ -2,7 +2,7 @@ package jh.algorithm.java8;
 
 import java.util.Arrays;
 
-public class Trainingtask {
+public class PermMissingElem {
 
 	public static void main(String[] args) {
 		
