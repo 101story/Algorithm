@@ -2,12 +2,12 @@ package com.jin.algo;
 
 import java.util.Arrays;
 
-public class Trainingtask {
+public class PermMissingElem {
 
 	public static void main(String[] args) {
-		
+
 		int[] A = {1,2,4,5};
-		
+
         Arrays.sort(A);
 		System.out.println(A.length);
 		for (int i = 1; i <= A.length+1; i++) {
@@ -16,7 +16,7 @@ public class Trainingtask {
 				System.out.println(Arrays.binarySearch(A, i));
 			}
 		}
-		
+
 	}
 
 }
