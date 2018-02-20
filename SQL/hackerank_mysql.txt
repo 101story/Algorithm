@@ -1,0 +1,57 @@
+
+문제) Weather Observation Station 3
+
+Query a list of CITY names from STATION with even ID numbers only. You may print the results in any order, but must exclude duplicates from your answer.
+
+제출 답 >>>
+ select distinct city from station where mod(ID, 2)=0
+
+-----------------------
+
+문제) Weather Observation Station 5
+
+Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
+
+Sample Input
+
+Let's say that CITY only has four entries: DEF, ABC, PQRS and WXY
+
+Sample Output
+
+ABC 3
+PQRS 4
+Explanation
+
+When ordered alphabetically, the CITY names are listed as ABC, DEF, PQRS, and WXY, with the respective lengths 3,3,4 and 3. The longest-named city is obviously PQRS, but there are 3 options for shortest-named city; we choose ABC, because it comes first alphabetically.
+
+제출 답 >>>
+
+select city, CHAR_LENGTH(city) as lenght from station where CHAR_LENGTH(city) = (select max(CHAR_LENGTH(city)) from station) order by city limit 1;
+select city, CHAR_LENGTH(city) as lenght from station where CHAR_LENGTH(city) = (select min(CHAR_LENGTH(city)) from station) order by city limit 1;
+
+-----------------------------
+
+문제) Weather Observation Station 6
+
+Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+
+제출 답 >>>
+
+select distinct city from station where city REGEXP '^[AEIOU]'
+
+/* ending with aeiou */
+select distinct city from station where city REGEXP '[aeiou]$'
+
+-----------------------------
+
+문제) Higher Than 75 Marks
+
+Query the Name of any student in STUDENTS who scored higher than  Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
+
+
+제출 답 >>>
+select name from students where marks > 75 order by SUBSTRING(name,-3), id 
+
+
+
+
