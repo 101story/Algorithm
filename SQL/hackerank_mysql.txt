@@ -1,3 +1,6 @@
+#################################
+#### Basic Select Challenges ####
+#################################
 
 문제) Weather Observation Station 3
 
@@ -51,6 +54,17 @@ Query the Name of any student in STUDENTS who scored higher than  Marks. Order y
 
 제출 답 >>>
 select name from students where marks > 75 order by SUBSTRING(name,-3), id 
+
+-----------------------------
+
+################################
+#### Aggregation Challenges ####
+################################
+
+
+
+
+
 
 
 
