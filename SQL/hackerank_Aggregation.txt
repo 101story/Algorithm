@@ -79,6 +79,8 @@ select round(abs(max(LAT_N)-min(LAT_N))+abs(max(long_w)-min(long_w)),4) from sta
 제출 답 >>>
 select round(SQRT(pow(max(LAT_N)-min(LAT_N),2)+pow(max(long_w)-min(long_w),2)) ,4) from station 
 
+중요!!!!
+
 문제) Median
 
 A median is defined as a number separating the higher half of a data set from the lower half. Query the median of the Northern Latitudes (LAT_N) from STATION and round your answer to  decimal places.
